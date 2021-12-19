@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_orders",
+  "info": {
+    "singularName": "user-order",
+    "pluralName": "user-orders",
+    "displayName": "UserOrder"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "IDOrder": {
+      "type": "string",
+      "unique": true
+    },
+    "IDProduct": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "IDUser": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "Status": {
+      "type": "string"
+    },
+    "PaymentMethod": {
+      "type": "string"
+    },
+    "OrderDate": {
+      "type": "string"
+    },
+    "Quantity": {
+      "type": "integer"
+    }
+  }
+}
