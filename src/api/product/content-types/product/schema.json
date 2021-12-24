@@ -12,10 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "ProductName": {
+    "name": {
       "type": "string"
     },
-    "Image": {
+    "image": {
       "type": "media",
       "multiple": true,
       "required": false,
@@ -25,43 +25,39 @@
         "videos"
       ]
     },
-    "Description": {
+    "description": {
       "type": "text"
     },
-    "ProductType": {
+    "type": {
       "type": "string"
     },
-    "PackageSize": {
+    "packageSize": {
       "type": "string"
     },
-    "Weight": {
+    "weight": {
       "type": "float"
     },
-    "Price": {
+    "price": {
       "type": "float"
     },
-    "Review": {
+    "review": {
       "type": "text"
     },
-    "Rating": {
+    "rating": {
       "type": "integer"
     },
-    "Quantity": {
+    "quantity": {
       "type": "integer"
     },
     "Status": {
       "type": "string"
     },
-    "IDProduct": {
-      "type": "string",
-      "unique": true
-    },
-    "IDCategory": {
+    "categoryId": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::category.category"
     },
-    "IDShop": {
+    "shopId": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::shop.shop"

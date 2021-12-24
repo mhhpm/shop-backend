@@ -63,29 +63,22 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "IDUser": {
-      "type": "string",
-      "unique": true
-    },
-    "FirstName": {
+    "name": {
       "type": "string"
     },
-    "LastName": {
+    "phoneNumber": {
       "type": "string"
     },
-    "PhoneNumber": {
+    "dateOfBirth": {
       "type": "string"
     },
-    "DateOfBirth": {
+    "gender": {
       "type": "string"
     },
-    "Gender": {
+    "status": {
       "type": "string"
     },
-    "Status": {
-      "type": "string"
-    },
-    "TypeUser": {
+    "type": {
       "type": "string"
     }
   }
